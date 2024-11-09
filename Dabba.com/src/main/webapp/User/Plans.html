@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main-frame{
+        background-color: #ed999a;
+        padding: 20px;
+        border: 2px solid gray;
+        border-radius: 8px;
+        border-collapse: collapse;
+    }
+      .h2{
+    	
+    	padding-bottom: 30px;
+    	font-size:30px
+   }
+  
+    .input-group label {
+     
+      color: black;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .input-group label[for="Days"] {
+    	font-weight: bold;
+    	color:black;
+    	font-size:20px;
+    	margin-bottom:20px;
+     
+    }
+
+    .input-group input[type="text"]{
+      width: 50%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 30px;
+    }
+ 
+
+    #btn {
+      font-weight: bold;
+      background-color:  #e1585a;
+      color: white;
+      padding: 10px 0px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      width: 10%;
+      font-size:15px;
+    }
+
+    #btn:hover {
+      background-color:  #e1585a;
+    }
+    
+    .p1{
+    	font-weight: bold;
+    	color:black;
+    	font-size:20px;
+    	margin-bottom:20px;
+    	
+    }
+     table{
+        margin-top: 65px;
+        margin-bottom: 30px;
+        background-color: azure;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 8px;
+        
+    }
+    thead{
+        background-color: rgb(108, 108, 108);
+        color: white;
+        border-top-right-radius: 8px;
+    }
+    th, td{
+        border: 2px solid black;
+        padding: 10px;
+        font-weight: bold;
+    }
+    
+</style>
+<body>
+
+   
+<h2 class="h2" align="center">Plan</h2>
+    <div class="main-frame">
+   	<form>
+   		<div class="input-group">
+        <label for="Days">How Many Days:</label>
+        <input type="text" id="username" name="username" placeholder="Enter how many days " required>
+      
+     <div>
+      <p class="p1">Select the type of Tiffin:</p>
+      <div>
+        <input type="radio" id="full" name="full" value="full" required>
+        <label for="full">Full Tiffin (Rs. 100 per Tiffin)</label><br>
+       </div>
+        <input type="radio" id="half" name="half" value="half">
+        <label for="half">Half Tiffin (Rs. 80 per Tiffin)</label><br>
+  		
+      
+      <button type="button" id="btn">Order</button>
+      </div>
+    
+   	</form>
+   	</div>
+   	 <table>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">How Many Days</th>
+                        <th scope="col">Tiffin Type</th>
+                         <th scope="col">Action</th>
+                        
+                    </tr>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                        <td scope="row">1</td>
+                        <td>31 days</td>
+                        <td>Full Tiffin</td>
+                        <td>Edit</td>
+                        
+                    </tr>
+                    
+                </tbody>
+                
+            </table>
+  
+    
+</body>
+</html>
